@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './Profile.module.css';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
@@ -9,6 +10,28 @@ export default function Profile({ username, tag, location, avatar, stats }) {
         <p className={tag}>@{tag}</p>
         <p className={location}>{location}</p>
       </div>
+
+      <ul className={stats}>
+        <li className={item}>
+          <span className={label}>Followers</span>
+          <span className={label}>Followers</span>
+        </li>
+        <li>
+          <span className={label}>Views</span>
+          <span className={label}>2000</span>
+        </li>
+        <li>
+          <span className={label}>Likes</span>
+          <span className={label}>3000</span>
+        </li>
+      </ul>
     </div>
   );
 }
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+};
