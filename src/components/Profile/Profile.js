@@ -3,26 +3,26 @@ import css from './Profile.module.css';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div className={profile}>
-      <div className={description}>
-        <img src={avatar} alt="User avatar" className={avatar} />
-        <p className={name}>{username}</p>
-        <p className={tag}>@{tag}</p>
-        <p className={location}>{location}</p>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul className={stats}>
-        <li className={item}>
-          <span className={label}>Followers</span>
-          <span className={label}>Followers</span>
+      <ul className={css.stats}>
+        <li className={css.item}>
+          <span className={css.label}>Followers</span>
+          <span className={css.quantity}>Followers</span>
         </li>
         <li>
-          <span className={label}>Views</span>
-          <span className={label}>2000</span>
+          <span className={css.label}>Views</span>
+          <span className={css.quantity}>2000</span>
         </li>
         <li>
-          <span className={label}>Likes</span>
-          <span className={label}>3000</span>
+          <span className={css.label}>Likes</span>
+          <span className={css.quantity}>3000</span>
         </li>
       </ul>
     </div>
