@@ -21,8 +21,8 @@ import Statistics from './Statistics/Statistics';
 import data from '../data/data.json';
 // import FriendList from './FriendList';
 // import friends from '../data/friends.json';
-// import TransactionTable from './TransactionTable';
-// import transactions from '../data/transactions.json';
+import TransactionTable from './TransactionTable/TransactionTable.js';
+import transactions from '../data/transactions.json';
 
 export default function App() {
   return (
@@ -43,8 +43,8 @@ export default function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      {/* <FriendList friends={friends} />
-      <TransactionTable items={transactions} /> */}
+      {/* <FriendList friends={friends} /> */}
+      <TransactionTable items={transactions} />
     </div>
   );
 }
