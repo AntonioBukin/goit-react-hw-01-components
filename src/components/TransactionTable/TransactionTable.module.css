@@ -1,0 +1,43 @@
+.transactions {
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    border-radius: 3px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.thead {
+    background-color: rgb(0, 174, 255);
+    color: white;
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    text-align: center;
+}
+
+.textstart {
+    text-align: start;
+}
+
+.datahead {
+    padding: 10px 50px;
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+}
+
+.data {
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.data:nth-child(3n+1) {
+    text-align: start;
+}
+
+.data:nth-child(2n) {
+    text-align: end;
+}
+
+.dataevensecond:nth-child(2n) {
+    border: 1px solid hsla(0, 2%, 30%, 0.348);
+    padding: 10px 50px;
+    background-color: rgb(233, 231, 231);
+
+}

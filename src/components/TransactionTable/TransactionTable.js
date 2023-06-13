@@ -16,7 +16,7 @@ export default function TransactionTable({items}) {
   <tbody>
     {items.map(({id, type, amount, currency}) => {
         return (
-        <tr key={id} className={css.dataevensecons}>
+        <tr key={id} className={css.dataevensecond}>
             <td className={[css.data, css.textstart].join(' ')}>{type}</td>
             <td className={css.data}>{amount}</td>
             <td className={css.data}>{currency}</td>
